@@ -132,7 +132,7 @@ const loginUser = async (req, res) => {
             process.env.JWT_TOKEN_SECRET,
             { 
                 expiresIn: "1h",
-                algorithm: 'HS256' // Ensure strong JWT algorithm
+                algorithm: 'HS256' // Ensure strong JWT algorithm alogrithm
             }
         );
 
