@@ -176,7 +176,7 @@ const changePassword = async (req, res) => {
             });
         }
 
-        // Ensure new password complexity password completixt
+        // Ensure new password complexity password 
         const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/;
         if (!newPassword.match(passwordRegex)) {
             return res.json({
