@@ -152,7 +152,7 @@ const loginUser = async (req, res) => {
     }
 };
 
-//* Change Password logic
+//* Change Password logic 
 const changePassword = async (req, res) => {
     try {
         console.log(req.body);
