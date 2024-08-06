@@ -2,7 +2,7 @@ const { json } = require("express");
 const cloudinary = require("cloudinary");
 const Orders = require("../model/orderModel");
  
-// order created controller
+// order created 
 
 const createOrder = async (req, res) => {
   console.log(req.body);
