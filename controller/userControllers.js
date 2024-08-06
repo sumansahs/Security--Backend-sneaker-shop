@@ -60,7 +60,7 @@ const createUser = async (req, res) => {
     }
 };
 
-//* Login logic
+//* Login logic login
 const loginUser = async (req, res) => {
     console.log(req.body);
 
