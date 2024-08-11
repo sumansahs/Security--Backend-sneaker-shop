@@ -85,7 +85,7 @@ userSchema.methods.isPasswordReused = async function (newPassword) {
 userSchema.methods.incrementLoginAttempts = function (callback) {
     const lockoutTime = 1 * 60 * 60 * 1000; // 1 hour lockout time
 
-    // Check if account is already locked account locked
+    // Check if account is already locked account 
     if (this.lastFailedLogin && this.lastFailedLogin > Date.now() - lockoutTime) {
         this.failedLoginAttempts += 1;
     } else {
